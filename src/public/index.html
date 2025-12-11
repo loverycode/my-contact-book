@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книга контактов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Книга контактов</h1>
+
+        <div class="section">
+            <h2>Добавить контакт</h2>
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Имя" required>
+                <input type="tel" id="phone" placeholder="Телефон" required>
+                <input type="email" id="email" placeholder="Email">
+                <button onclick="addContact()" class="btn">Добавить</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Поиск</h2>
+            <div class="form-group">
+                <input type="text" id="search" placeholder="Введите имя">
+                <button onclick="searchContacts()" class="btn">Найти</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Список контактов</h2>
+            <div id="contacts-list">Загрузка...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
